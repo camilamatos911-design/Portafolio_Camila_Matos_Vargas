@@ -117,6 +117,13 @@
             border-image: linear-gradient(135deg, #6a0dad, #b57edc) 1;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
         }
+
+        .project-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
@@ -125,14 +132,14 @@
 
 <!-- Hero Section -->
 <header class="container min-vh-100 d-flex align-items-center">
-    <div class="row align-items-center">
+    <div class="row align-items-center w-100">
         <div class="col-lg-6">
             <h1 class="display-3 fw-bold">Camila Matos 👤</h1>
             <h2 class="fw-semibold">UI/UX Designer y Diseñadora Gráfica</h2>
-            <p class="lead">Especialista en interfaces minimalistas, diseño responsive y SEO. Transformo conceptos complejos en experiencias digitales intuitivas y de alto rendimiento, como crea[...]
+            <p class="lead">Especialista en interfaces minimalistas, diseño responsive y SEO. Transformo conceptos complejos en experiencias digitales intuitivas y de alto rendimiento.</p>
         </div>
         <div class="col-lg-6 text-center">
-            <img id="hero-img" src="photo_2026-06-03_22-41-54.png" class="rounded-circle hero-photo" alt="Camila Matos">
+            <img id="hero-img" src="./photo_2026-06-03_22-41-54.png" class="rounded-circle hero-photo" alt="Camila Matos">
         </div>
     </div>
 </header>
@@ -141,19 +148,29 @@
 <section class="container py-5">
     <h2 class="text-center mb-5">🚀 Proyectos Destacados</h2>
     <div class="row g-4">
-        <!-- Ejemplo de Tarjeta - Repetir 9 veces -->
+        <!-- Proyecto 1 -->
         <div class="col-md-4">
             <div class="card h-100 p-3">
-                <img src="still-life-graphic-design-day.jpg" class="img-fluid" alt="Proyecto 1: Como montar un buen portafolio">
-                <h5>Web Project 1</h5>
+                <img src="./still-life-graphic-design-day.jpg" class="project-img" alt="Proyecto 1: Como montar un buen portafolio">
+                <h5 class="mt-3">Web Project 1</h5>
                 <p>Categoría: Web</p>
             </div>
         </div>
+        <!-- Proyecto 2 -->
         <div class="col-md-4">
             <div class="card h-100 p-3">
-                <img src="still-life-graphic-design-studio.jpg" class="img-fluid" alt="Proyecto 2: Rehaciendo una linea grafica">
-                <h5>Web Project 2
-                </h5>
+                <img src="./still-life-graphic-design-studio.jpg" class="project-img" alt="Proyecto 2: Rehaciendo una linea grafica">
+                <h5 class="mt-3">Web Project 2</h5>
+                <p>Categoría: Web</p>
+            </div>
+        </div>
+        <!-- Proyecto 3 (placeholder para agregar más) -->
+        <div class="col-md-4">
+            <div class="card h-100 p-3">
+                <div class="project-img bg-light d-flex align-items-center justify-content-center">
+                    <span class="text-muted">Agregar imagen</span>
+                </div>
+                <h5 class="mt-3">Web Project 3</h5>
                 <p>Categoría: Web</p>
             </div>
         </div>
@@ -162,44 +179,54 @@
 
 <!-- Videos -->
 <section class="container py-5">
-    <!-- Video 1 -->
-<div class="card p-2">
-    <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1e_gGcOi4T21_DfLru4uYWgCzcQB499OX/preview" 
-                allow="autoplay" allowfullscreen>
-        </iframe>
-    </div>
-    <p class="mt-2 text-center">Edición de Video Agencia de viajes 🎥</p>
-</div>
+    <h2 class="text-center mb-5">🎥 Videos</h2>
+    <div class="row g-4">
+        <!-- Video 1 -->
+        <div class="col-md-4">
+            <div class="card p-2">
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1e_gGcOi4T21_DfLru4uYWgCzcQB499OX/preview" 
+                            allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="mt-2 text-center">Edición de Video Agencia de viajes 🎥</p>
+            </div>
+        </div>
 
-<!-- Video 2 -->
-<div class="card p-2">
-    <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1l5GwJASJbQM6KUs9h-EzJPxxa765lNao/preview" 
-                allow="autoplay" allowfullscreen>
-        </iframe>
-    </div>
-    <p class="mt-2 text-center">Edición de Video de oftalmologia 🎥</p>
-</div>
+        <!-- Video 2 -->
+        <div class="col-md-4">
+            <div class="card p-2">
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1l5GwJASJbQM6KUs9h-EzJPxxa765lNao/preview" 
+                            allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="mt-2 text-center">Edición de Video de oftalmologia 🎥</p>
+            </div>
+        </div>
 
-<!-- Video 3 -->
-<div class="card p-2">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/FPSZSxCwKX8" 
-                allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
+        <!-- Video 3 -->
+        <div class="col-md-4">
+            <div class="card p-2">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/FPSZSxCwKX8" 
+                            allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="mt-2 text-center">Primer Proyecto de PDM 🎥</p>
+            </div>
+        </div>
     </div>
-    <p class="mt-2 text-center">Primer Proyecto de PDM 🎥</p>
-</div>
 </section>
 
 <!-- Contacto -->
 <section class="container py-5">
     <div class="card p-5 mx-auto" style="max-width: 600px;">
+        <h2 class="text-center mb-4">Contacto</h2>
         <form id="contact-form">
-            <input type="text" class="form-control mb-3" placeholder="Nombre completo" required>
-            <input type="email" class="form-control mb-3" placeholder="Correo" required>
-            <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
+            <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" class="form-control mb-3" name="email" placeholder="Correo" required>
+            <textarea class="form-control mb-3" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
             <button type="submit" class="btn btn-custom w-100">Enviar Mensaje</button>
         </form>
     </div>
