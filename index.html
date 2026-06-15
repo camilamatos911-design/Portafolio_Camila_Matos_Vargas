@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Matos | UI/UX Designer y Diseñadora Grafica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-light: #ffffff;
+            --text-dark: #1a1a1a;
+            --primary-purple: #6a0dad;
+            --lavender: #b57edc;
+            --bg-dark: #0a0a0a;
+            --accent-cyber: #00f2ff;
+            --grad-1: #e0c3fc;
+            --grad-2: #ffffff;
+            --grad-3: #d9a7ff;
+            --grad-4: #cdb4db;
+            --grad-5: #f3e8ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            transition: 0.3s;
+        }
+
+        .bg-gradient-animated {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(-45deg, var(--grad-1), var(--grad-2), var(--grad-3), var(--grad-4), var(--grad-5));
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            opacity: 0.40;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h2 {
+            color: var(--primary-purple);
+        }
+
+        .lead {
+            color: #333333;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(10px);
+            color: var(--text-dark);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, var(--primary-purple), var(--lavender));
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .form-control {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            color: #333333;
+        }
+
+        .form-control:focus {
+            border-color: var(--lavender);
+            box-shadow: 0 0 0 0.2rem rgba(181, 126, 220, 0.25);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 0;
+        }
+
+        .hero-photo {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border: 4px solid transparent;
+            border-image: linear-gradient(135deg, #6a0dad, #b57edc) 1;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-gradient-animated"></div>
+
+<!-- Hero Section -->
+<header class="container min-vh-100 d-flex align-items-center">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h1 class="display-3 fw-bold">Camila Matos 👤</h1>
+            <h2 class="fw-semibold">UI/UX Designer y Diseñadora Gráfica</h2>
+            <p class="lead">Especialista en interfaces minimalistas, diseño responsive y SEO. Transformo conceptos complejos en experiencias digitales intuitivas y de alto rendimiento, como creación de diseño para redes sociales y marcas que buscan destacar en el mercado.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img id="hero-img" src="imagenes/photo_2026-06-03_22-41-54.png" class="rounded-circle hero-photo" alt="Camila Matos">
+        </div>
+    </div>
+</header>
+
+<!-- Proyectos -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">🚀 Proyectos Destacados</h2>
+    <div class="row g-4">
+        <!-- Ejemplo de Tarjeta - Repetir 9 veces -->
+        <div class="col-md-4">
+            <div class="card h-100 p-3">
+                <img src="imagenes/still-life-graphic-design-day.jpg" class="img-fluid" alt="Proyecto 1: Como montar un buen portafolio">
+                <h5>Web Project 1</h5>
+                <p>Categoría: Web</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 p-3">
+                <img src="imagenes/still-life-graphic-design-studio.jpg" class="img-fluid" alt="Proyecto 2: Rehaciendo una linea grafica">
+                <h5>Web Project 2
+                </h5>
+                <p>Categoría: Web</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Videos -->
+<section class="container py-5">
+    <!-- Video 1 -->
+<div class="card p-2">
+    <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1e_gGcOi4T21_DfLru4uYWgCzcQB499OX/preview" 
+                allow="autoplay" allowfullscreen>
+        </iframe>
+    </div>
+    <p class="mt-2 text-center">Edición de Video Agencia de viajes 🎥</p>
+</div>
+
+<!-- Video 2 -->
+<div class="card p-2">
+    <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1l5GwJASJbQM6KUs9h-EzJPxxa765lNao/preview" 
+                allow="autoplay" allowfullscreen>
+        </iframe>
+    </div>
+    <p class="mt-2 text-center">Edición de Video de oftalmologia 🎥</p>
+</div>
+
+<!-- Video 3 -->
+<div class="card p-2">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/FPSZSxCwKX8" 
+                allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+    </div>
+    <p class="mt-2 text-center">Primer Proyecto de PDM 🎥</p>
+</div>
+</section>
+
+<!-- Contacto -->
+<section class="container py-5">
+    <div class="card p-5 mx-auto" style="max-width: 600px;">
+        <form id="contact-form">
+            <input type="text" class="form-control mb-3" placeholder="Nombre completo" required>
+            <input type="email" class="form-control mb-3" placeholder="Correo" required>
+            <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
+            <button type="submit" class="btn btn-custom w-100">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
